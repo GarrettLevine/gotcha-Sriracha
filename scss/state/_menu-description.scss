@@ -1,0 +1,29 @@
+.is-descriptor {
+	div {
+		background: linear-gradient(rgba(0, 0, 0, .7),
+					rgba(0, 0, 0, .7));
+
+
+		position: absolute;
+		z-index: 10;
+		top: 0;
+
+		height: 106.997px;
+		width: 295px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		p {
+			text-align: center;
+			vertical-align: center;
+			width: 60%;
+			font-size: em(14px);
+
+			opacity: 0.87;
+			color: white;
+		}
+	}
+
+}

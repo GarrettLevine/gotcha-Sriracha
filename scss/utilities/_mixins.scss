@@ -1,0 +1,40 @@
+//===============================
+// MEDIA QUERY MIXIN
+//===============================
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    @content;
+  } 
+ } @else if $break == "medium" {
+    @media (min-width: $brkpoint-md + 1) {
+    @content;
+    }
+  } 
+   @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+     @content;
+    }
+  }
+  @else if $break == "x-large" {
+    @media (min-width: $brkpoint-xlg) {
+      @content;
+    }
+  }
+   @else {
+    @error "Whoops! no value could be retried for '#{$break}'!";
+  }
+}
+
+//===============================
+// IMAGE REPLACEMENT
+//===============================
+
+@mixin img-replace($img, $w, $h, $disp: block) {
+  background-image: url('#{$path--rel}/#{$img}');
+  background-repeat: no-repeat;
+  width: $w;
+  height: $h;
+  display: $disp;
+}

@@ -1,0 +1,426 @@
+//=================================
+// HEADER MOBILE LAYOUT
+//=================================
+
+.header {
+	@extend %flex-container;
+	justify-content: space-around;
+	position: relative;
+	height: 90px;
+	z-index: 100;	
+
+	&__nav {
+		@extend %flex-container;
+		justify-content: space-between;
+
+		width: 90%;
+
+		&__name {
+			display: none;
+
+			@include mq(medium) {
+				display: inline;
+				margin-right: auto;
+			}
+		}
+
+		&__logo {
+			margin-right: auto;
+
+			@include mq(medium) {
+				display: none;
+			}
+		}
+
+		&__button {
+			@extend %flex-container;
+			font-size: em(18px);
+		}
+
+		a {
+			padding: em(12px);
+		}
+	}
+}
+
+//=================================
+// MAIN DIV LAYOUT
+//=================================
+
+.main {
+	position: relative;
+	overflow: hidden;
+	&__sriracha-decal {
+		position: absolute;
+		transform: scale(1.2, 1.2);
+		left: 30%;
+		top: -40px;
+
+		@include mq(medium) {
+			transform: scale(1.4, 1.4);
+			left: 33%;
+			top: 10px;
+		}
+
+		@include mq(large) {
+			transform:scale(1.5, 1.5);
+			left: 38%;
+		}
+
+		@include mq(x-large) {
+			transform: scale(2, 2);
+			left: 45%;
+			top: 60px;
+		}
+	}
+
+	&__container {
+		@extend %flex-container;
+		justify-content: space-around;
+
+		margin: auto;
+		padding-top: 350px;
+		width: 80%;
+
+		& li {
+			display: inline-block;
+			padding: em(8px) em(8px);
+		}
+
+		@include mq(medium) { 
+			padding-top: 500px;
+		}
+
+		@include mq(x-large) {
+			padding-top: 600px;
+		}
+
+	}
+}
+
+//=================================
+// MENU DIV  LAYOUT
+//=================================
+
+.menu {
+	background: $white;
+
+	h2 {
+		@extend %h2-padding;
+		text-align: center;
+	}
+
+	&__container {
+		@extend %mobile-container;
+
+		&-snackContainer {
+			&__item {
+				position: relative;
+				margin-top: em(24px);
+
+				&-infoButton {
+					@extend %info-icn-layout;
+				}
+			
+				h4 {
+					padding: 0.5em;
+				}
+			}
+		}
+
+		&-mealContainer {
+
+			padding-top: em(32px);
+			padding-bottom: em(32px);
+
+			&__item {
+				position: relative;
+				
+				margin-top: em(24px);
+
+				&-infoButton {
+					@extend %info-icn-layout;
+				}
+
+				h4 {
+					padding: 0.5em;
+				}
+			}
+
+		}
+
+		@include mq(medium) {
+			flex-direction: row;
+			justify-content: space-around;
+
+			h3 {
+				text-align: center;
+			}
+		}
+
+		@include mq(large) {
+			width: 65%;
+
+			justify-content: space-between;
+		}
+	}
+
+
+}
+
+//=================================
+// ABOUT DIV  LAYOUT
+//=================================
+
+.about {
+
+	@include mq(medium) {
+		height: 900px;
+	}
+
+	@include mq(large) {
+		height: 650px;
+	}
+
+
+	h2 {
+		@extend %h2-padding;
+	}
+
+	h3 {
+		margin-top: 1em;
+	}
+
+	h4 {
+		padding-top: 1em;
+	}
+
+	h5 {
+		padding-top: em(5px);
+	}
+
+	&__container {
+		@extend %flex-container;
+		flex-direction: column;
+		padding: 1em;
+		
+		width: 90%;
+		margin: auto;
+
+		@include mq(medium) {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			height: 700px;
+			width: 85%;
+		}
+
+		@include mq(large) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			height: 500px;
+		}
+
+		&-story {
+			@include mq(large) 	{
+
+				width: 40%;
+			}
+		}
+
+		&-founders {
+			width: 100%;
+
+			@include mq(large) {
+				width: 55%;
+			}
+
+			
+			&--garrett,
+			&--marc {
+				@include mq(medium) {
+					width: 30%;
+				}
+
+				@include mq(large) {
+					padding-top: 6em;
+				}
+			}
+			
+
+			&-container {
+				@extend %flex-container;
+				flex-direction: column;
+				justify-content: space-around;
+
+				margin: auto;
+				margin-top: 25px;
+				text-align: center;
+
+				width: 250px;
+				height: 600px;
+			
+				@include mq(medium) {
+					width: 90%;
+					height: 300px;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-around;
+					
+				}
+
+				@include mq(large) {
+					width: 100%;
+					margin-top: 0;
+				}
+			}
+
+		}
+	}
+}
+
+//=================================
+// CONTACT DIV  LAYOUT
+//=================================
+
+
+.contact {
+	background: $white;
+	height: 850px;
+
+	h2 {
+		@extend %h2-padding;
+		text-align: center;
+	}
+
+	
+	@include mq(medium) {
+		height: 550px;
+	}
+
+
+	&__container {
+		@extend %flex-container;
+		flex-direction: column;
+
+		width: 350px;
+		height: 650px;
+		margin: auto;
+
+		
+
+		@include mq(medium) {
+
+			width: 80%;
+			height: 400px;
+
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+
+		&--address {
+			width: 100%;
+
+			@include mq(medium) {
+				display: flex;
+				flex-direction: column;
+				align-items: right;
+
+				height: 350px;
+				width: 45%;
+				
+			}
+
+
+			&--map {
+				padding-top: 1em;
+				padding-bottom: 1em;
+				width: 100%;
+
+				@include mq(medium) {
+					width: 350px;
+					height: 220px;
+					margin-top: 35px;
+				}
+			}
+
+		}
+
+		
+
+		&-form {
+			@extend %flex-container;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-top: auto;
+
+			width: 100%;
+
+			@include mq(medium) {
+				order: -1;
+				width: 50%;
+			}
+			
+
+			input[type="text"], textarea {
+				width: 100%;
+				margin-bottom: 1em;
+				padding-left: 1em;
+				padding-top: 0.8em;
+			}
+
+			input[type="text"] {
+				height: 50px;
+			}
+
+			textarea {
+				height: 150px;
+				resize: none;
+			}
+
+			input[type="submit"] {
+			 align-self: flex-end;
+
+			 padding: 0.9em;
+			}
+		}
+	}
+}
+
+//=================================
+// CONTACT DIV  LAYOUT
+//=================================
+
+.footer {
+	@extend %flex-container;
+	background: $secondary-color;
+
+	height: 80px;
+
+	&__container {
+		@extend %flex-container;
+		flex-direction: row;
+		justify-content: space-around;
+
+		margin: auto; 
+		width: 80%;
+
+
+
+		li {
+			padding-right: 0.5em;
+
+			@include mq(medium) {
+				padding-right: 1.5em;
+			}
+		}
+	}
+}
+
+
+
+

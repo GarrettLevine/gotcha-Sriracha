@@ -1,0 +1,26 @@
+%flex-container {
+	display: flex;
+	align-items: center;
+}
+
+%h2-padding {
+	padding-top: em(12px);
+	padding-bottom: em(12px);
+}
+
+%mobile-container {
+	@extend %flex-container;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	
+	width: 90%;
+	margin: auto;
+}
+
+%info-icn-layout {
+		position: absolute;
+		bottom: 22.5px;
+		right: 20px;
+		z-index: 100;
+}

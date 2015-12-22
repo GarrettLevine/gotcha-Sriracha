@@ -1,0 +1,31 @@
+input[type="text"],
+input[type="submit"], 
+textarea {
+	border: none;
+
+}
+
+input[type="text"], 
+textarea {
+	@extend %tb-box-shadow;
+		color: $secondary-color;
+}
+
+input:focus,
+textarea:focus {
+	outline: 0;
+	@extend %box-shadow-hover;
+}
+
+input[type="submit"] {
+	@extend %tb-box-shadow;
+	background: $primary-color;
+	color: $white;
+	font-size: em(18px);
+
+	&:hover {
+		@extend %box-shadow-hover;
+		background: $secondary-color;
+		transition: 0.5s;
+	}
+}

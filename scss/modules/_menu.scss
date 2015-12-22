@@ -1,0 +1,42 @@
+.menu {
+	@extend %tb-box-shadow;
+	position: relative;
+	z-index: 100;
+	h2 {
+		color: $tertiary-color;
+		font-size: $h2-font-size;
+	}
+
+	h3 {
+		color: $primary-color;
+		font-size: em(30px);
+	}
+
+	&__container {
+
+		&-snackContainer {
+
+			&__item {
+				@extend %tb-box-shadow;
+				
+				h4 {
+					font-size: $h4-font-size;
+				}
+			}
+
+		}
+		&-mealContainer {
+
+			&__item {
+				@extend %tb-box-shadow;
+				
+				h4 {
+					font-size: em(20px);
+				}
+			}
+
+		}
+
+
+	}
+}

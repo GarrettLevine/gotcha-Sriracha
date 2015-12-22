@@ -1,0 +1,23 @@
+.contact {
+
+	h2 {
+		font-size: $h2-font-size;
+		color: $tertiary-color;
+	}
+
+	address {
+		opacity: 0.87;
+	}
+
+	a {
+		color: $link-color;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+
+	&__container--map {
+	}
+}
+

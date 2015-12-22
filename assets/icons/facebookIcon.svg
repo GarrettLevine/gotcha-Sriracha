@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="57px" height="56px" viewBox="0 0 57 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16618) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <ellipse id="path-2" cx="24.1546114" cy="24.1297297" rx="24.1546114" ry="24.1297297"></ellipse>
+    </defs>
+    <g id="assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="quick-access-buttons" sketch:type="MSLayerGroup">
+            <g id="facebook-icon" transform="translate(4.000000, 2.000000)">
+                <g id="Oval-19" filter="url(#filter-1)">
+                    <use fill="#FF5722" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                    <use fill="none" xlink:href="#path-2"></use>
+                </g>
+                <g id="facebook31" transform="translate(16.606295, 9.048649)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <g id="Icons">
+                        <path d="M2.93672628,5.84174054 L2.93672628,9.9944 L0,9.9944 L0,15.0723676 L2.93672628,15.0723676 L2.93672628,30.1621622 L8.96966398,30.1621622 L8.96966398,15.0727027 L13.0176102,15.0727027 C13.0176102,15.0727027 13.3967513,12.6379459 13.5804989,9.97563243 L8.99230893,9.97563243 L8.99230893,6.50363243 C8.99230893,5.98484324 9.64998292,5.28675676 10.3002164,5.28675676 L13.5869689,5.28675676 L13.5869689,0.000335135135 L9.11815014,0.000335135135 C2.78759312,3.65832581e-14 2.93672628,5.08299459 2.93672628,5.84174054 L2.93672628,5.84174054 Z" id="Facebook"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

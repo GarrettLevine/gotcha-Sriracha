@@ -1,0 +1,12 @@
+.main,
+.footer  {
+
+	li:hover {
+		@extend %icn-hover;
+	}
+
+	li:active {
+		@extend %icn-active;
+	}
+}
+

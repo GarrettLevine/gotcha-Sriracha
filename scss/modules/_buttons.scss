@@ -1,0 +1,20 @@
+button[class$="infoButton"] {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+
+	img {
+		position: relative;
+		bottom: 6px;
+		right: 12px;
+	}
+}
+
+.menu___container-snackContainer__item-infoButton-svg {
+	&:hover {
+		@extend %icn-hover;
+	}
+	&:active {
+		@extend %icn-active;
+	}
+}

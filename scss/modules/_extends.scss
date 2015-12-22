@@ -1,0 +1,57 @@
+//===================================================================
+//  MODULE EXTENDS 
+//===================================================================
+
+
+//======================================
+// BOX SHADOWS
+//======================================
+
+%bottom-box-shadow {
+	box-shadow: 0 em(2px) em(8px) $grey;
+}
+
+%tb-box-shadow {
+	box-shadow: 0 em(2px) em(4px) $grey;
+}
+
+%box-shadow-hover {
+	box-shadow: 0 em(5px) em(7px) $grey;
+}
+
+//======================================
+// ICON STYLES
+//======================================
+
+
+%icn-hover {
+	transform: scale(1.1, 1.1);
+	transition: 0.5s;
+}
+
+%icn-active {
+	transform: scale(1, 1);
+	transition: 0.1s;
+}
+
+//======================================
+// PORTFOLIO IMAGE STYLES
+//======================================
+
+
+%portfolio-image-style {
+	@extend %tb-box-shadow;
+	width: 165px;
+	height: 165px;
+
+	border: 6px solid $white;
+	border-radius: 50%;
+}
+@include mq(medium) {
+	%portfolio-image-style-md {
+		width: 200px;
+		height: 200px;
+
+		border: 10px solid $white;
+	}
+}

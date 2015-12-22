@@ -1,0 +1,64 @@
+.about {
+	background: $primary-color;
+	color: $white;
+
+	h2 {
+		font-size: $h2-font-size;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: $h3-font-size;
+	}
+
+	h4 {
+		font-size: $h4-font-size;
+	}
+
+	h5 {
+		font-size: $h5-font-size;
+		color: $white;
+		opacity: 0.87;
+		letter-spacing: 1.5px;
+	}
+
+	h6 {
+		font-size: $h6-font-size;
+		opacity: 0.54;
+	}
+
+	&__container {
+
+		p {
+			opacity: 0.87;
+		}
+
+		&-founders {
+
+
+			p {
+				font-size: em(12px);
+				opacity: 0.87;
+			}
+
+			&--garrett {
+				img {
+					@extend %portfolio-image-style;
+
+					@include mq(medium) {
+						@extend %portfolio-image-style-md;
+					}
+				}
+			}
+			&--marc {
+				img {
+					@extend %portfolio-image-style;
+
+					@include mq(medium) {
+						@extend %portfolio-image-style-md;
+					}
+				}
+			} 
+		}
+	}
+}

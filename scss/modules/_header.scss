@@ -1,0 +1,46 @@
+// ==========================================================================
+// HEADER STYLES
+// ==========================================================================
+
+.header {
+
+	@extend %bottom-box-shadow;
+	background: $secondary-color;
+
+	&__logo {
+		color: $white;
+		text-align: center;
+	}
+
+	&__nav {
+
+		&__name {		
+			font-size: $h3-font-size;
+			color: $white;
+			font-family: $font-family--primary;
+		}	
+		
+		& a {
+			color: $white;
+		}
+
+		&__button {
+
+			@include mq(large) {
+				font-size: em(25px);
+			}
+
+			&:hover {
+				background: darken($secondary-color, 10%);
+				transition: 0.6s;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

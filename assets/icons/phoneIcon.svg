@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="57px" height="56px" viewBox="0 0 57 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16618) - http://www.bohemiancoding.com/sketch -->
+    <title>phone icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <ellipse id="path-2" cx="24.1546114" cy="24.1297297" rx="24.1546114" ry="24.1297297"></ellipse>
+    </defs>
+    <g id="assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="quick-access-buttons" sketch:type="MSLayerGroup" transform="translate(-624.000000, 0.000000)">
+            <g id="phone-icon" transform="translate(628.138462, 2.000000)">
+                <g id="Oval-19-Copy-3" filter="url(#filter-1)">
+                    <use fill="#FF5722" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                    <use fill="none" xlink:href="#path-2"></use>
+                </g>
+                <g id="0067-phone" transform="translate(10.567642, 10.556757)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <path d="M19.9275544,16.2875676 C18.1159586,18.0972973 18.1159586,19.907027 16.3043627,19.907027 C14.4927668,19.907027 12.681171,18.0972973 10.8695751,16.2875676 C9.05797928,14.4778378 7.24638342,12.6681081 7.24638342,10.8583784 C7.24638342,9.04864865 9.05797928,9.04864865 10.8695751,7.23891892 C12.681171,5.42918919 7.24638342,0 5.43478757,0 C3.62319171,0 0,5.42918919 0,5.42918919 C0,9.04864865 3.72237658,16.3866503 7.24638342,19.907027 C10.7703903,23.4274038 18.1159586,27.1459459 21.7391503,27.1459459 C21.7391503,27.1459459 27.1739378,23.5264865 27.1739378,21.7167568 C27.1739378,19.907027 21.7391503,14.4778378 19.9275544,16.2875676 L19.9275544,16.2875676 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
